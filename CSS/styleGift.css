@@ -1,0 +1,93 @@
+/*content*/
+
+.content {
+    margin-top: 32px;
+}
+
+.section-header {
+    background: url(../ASSETS/img/bg-gift.jpg) top center / cover no-repeat;
+    min-height: 400px;
+    margin: 0 16px;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    font-weight: 550;
+    margin-bottom: 0;
+}
+
+.section-header p {
+    max-width: 650px;
+    font-size: 20px;
+    padding: 16px 0;
+    margin: 0;
+    font-style: italic;
+}
+
+.list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-radius: 2.5rem;
+    list-style-type: none;
+    counter-reset: section;
+}
+
+.list-group li {
+    font-size: 18px;
+}
+
+.row {
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.col-auto img {
+    height: 657px;
+}
+
+.col-lg-5 {
+    width: 550px;
+}
+
+form {
+    padding: 32px;
+    border: 1px solid #000;
+}
+
+.form-label {
+    font-size: 20px;
+    padding: 16px 0 9px 0;
+    margin: 0;
+}
+
+.col-lg-5 td {
+    width: 670px;
+}
+
+.col-lg-5 select {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+}
+
+.col-lg-5 option {
+    font-size: 18px;
+}
+
+.col-lg-5 input {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+}
+
+.btn-giftCard {
+    width: 60px;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+.btn-giftCard input {
+    font-size: 18px;
+}

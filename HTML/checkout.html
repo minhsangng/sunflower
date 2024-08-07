@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán | SunFlower - Shop Hoa Trực Tuyến</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/SideBarIcon.png">
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/bootstrap-grid.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../ASSETS/fonts/fontawesome-free-6.4.0-web/css/all.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/script.js"></script>
+
+    <style>
+        .row {
+            width: 100%;
+        }
+
+        .md-form {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="grey lighten-3">
+
+    <!-- Navbar -->
+    <header>
+        <div class="sale-bar">
+            <p class="sale_message text-center">MUA 2 TẶNG 1 KHI NHẬP MÃ: 2003 <i class="fa-solid fa-ticket"></i></p>
+        </div>
+    </header>
+    <div class="header my-5">
+        <div class="vector-left">
+            <a href="../home.html">
+                <h1 class="header-title">SUNFLOWER</h1>
+            </a>
+        </div>
+        <div class="vector-center">
+            <ul class="nav">
+                <li class="sl">
+                    <select>
+                        <option value="Khu vực">Khu vực</option>
+                        <option value="TPHCM">TPHCM</option>
+                        <option value="Cần Thơ">Cần Thơ</option>
+                        <option value="Đà Nẵng">Đà Nẵng</option>
+                        <option value="Hải Phòng">Hải Phòng</option>
+                        <option value="Biên Hoà">Biên Hoà</option>
+                        <option value="Hà Nội">Hà Nội</option>
+                        <option value="Tỉnh khác">Tỉnh khác</option>
+                    </select>
+                </li>
+                <li><a class="strong" href="../home.html">Trang chủ</a></li>
+                <li class="rotato-down"><a href="#">Sản phẩm
+                        <i class="fa-solid fa-angle-down text-sm"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="../HTML/product.html?h1">Hoa Giả</a></li>
+                        <li><a href="../HTML/product.html?h2">Hoa Tươi</a></li>
+                        <li><a href="../HTML/product.html?h3">Chậu Hoa</a></li>
+                        <li><a href="../HTML/product.html?h4">Giỏ Hoa</a></li>
+                    </ul>
+                </li>
+                <li><a class="strong" href="../HTML/sale.html">Ưu đãi</a></li>
+                <li><a class="strong" href="../HTML/giftcard.html">Quà tặng</a></li>
+                <li><a class="strong" href="../HTML/takecareFlower.html">Hướng dẫn</a></li>
+            </ul>
+        </div>
+        <div class="vector-right">
+            <div class="header-cart">
+                <div class="checkout" style="width: 150px;">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#cart">
+                        <i class="fa-solid fa-cart-shopping"  id="icon_checkout"></i>
+                        <span class="count-cart">0</span>
+                    </a>
+                </div>
+
+            </div>
+            <div class="header-user">
+                <a href="#" id="loginBtn" data-target="#myModal" data-toggle="modal">
+                    <i class="fa-solid fa-user" id="user"></i>
+                </a>
+
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content" style="background: #ffd6e4;">
+                            <div class="modal-header">
+                                <h4>Đăng nhập</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form name="form" class="box" method="post">
+                                    <div class="input-email">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <input id="email" class="input-email-btn" type="email" name="email" placeholder="Email" />
+                                    </div>
+            
+                                    <div class="input-pass">
+                                        <i class="fa-solid fa-lock"></i>
+                                        <input id="pass" class="input-pass-btn" type="password" name="password"
+                                            placeholder="Mật khẩu" />
+                                    </div>
+            
+                                    <a href="#" class="forgetpass">Quên mật khẩu?</a>
+            
+                                    <div class="btn-control">
+                                        <input type="button" data-dismiss="modal" class="cancel" id="cancel"
+                                            value="QUAY LẠI"></input>
+                                        <input type="button" onclick="closeModal()" class="submit" id="submit"
+                                            value="ĐĂNG NHẬP"></input>
+                                    </div>
+            
+                                    <div class="login-or">
+                                        <div class="login-separator"></div>
+                                        <h2 class="login-text">HOẶC</h2>
+                                        <div class="login-separator"></div>
+                                    </div>
+            
+                                    <div class="btn-link-control">
+                                        <a href="#" class="btn-fb">
+                                            <i class="fa-brands fa-facebook"></i>
+                                            <p>Facebook</p>
+                                        </a>
+            
+                                        <a href="#" class="btn-gg">
+                                            <i class="fa-brands fa-google"></i>
+                                            <p>Google</p>
+                                        </a>
+                                    </div>
+            
+                                    <p class="login-text-extra">Bạn chưa có tài khoản? <a href="#">Đăng ký.</a></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar -->
+
+    <!--Main layout-->
+    <main class="mt-5 pt-4">
+        <div class="container wow fadeIn">
+
+            <!-- Heading -->
+            <h2 class="my-5 h2 text-center" style="margin-top: 50px; font-family: 'Courier New', Courier, monospace; font-weight: bold;">Thông tin giao hàng</h2>
+
+            <!--Grid row-->
+            <div class="row" style="margin-bottom: 50px;margin-top: 50px;">
+
+                <!--Grid column-->
+                <div class="col-md-8 mb-4">
+
+                    <!--Card-->
+                    <div class="card">
+
+                        <!--Card content-->
+                        <form class="card-body">
+                            <div class="row">
+                                <div class="md-form mb-5">
+                                    <label class="contentPay">Họ và tên</label>
+                                    <input type="text" id="fname" name="firstname" class="form-control" placeholder="" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="md-form mb-5">
+                                    <label for="firstName" class="contentPay">Email</label>
+                                    <input type="text" id="firstName" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="md-form mb-5">
+                                    <label class="contentPay">Số điện thoại</label>
+                                    <input type="text" id="lastName" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="md-form mb-5">
+                                    <label for="address" class="contentPay">Địa chỉ</label>.
+                                    <input type="text" id="address" class="form-control" placeholder="1234 Main St"
+                                        required>
+                                </div>
+                            </div>
+                            <hr class="mb-4">
+                            <div class="row">
+                                <div class="md-form mb-5">
+                                    <button class="btn btn-primary btn-lg btn-block clearOrder" type="submit" id="send">Xác nhận đơn hàng</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-md-4 mb-4">
+
+                    <!-- Heading -->
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-muted">Đơn hàng của bạn</span>
+                        <span class="badge badge-secondary badge-pill total-count"></span>
+                    </h4>
+
+                    <!-- Cart -->
+                    <ul class="list-group mb-3 z-depth-1">
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div style="width: 100%;;">
+                                <h6 class="my-0 show-cart-checkout" style="margin: 0;"><b>asdf</b> <br>Số lượng: </h6>
+                                <!-- <small class="text-muted">Tổng tiền</small> -->
+                            </div>
+                            <!-- <span class="text-muted">VND</span> -->
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Tổng Cộng (VND)</span>
+                            <strong class="total-cart"></strong>
+                        </li>
+                    </ul>
+                    <!-- Cart -->
+
+                </div>
+                <!--Grid column-->
+            </div>
+
+
+        </div>
+        <!--Grid row-->
+
+        </div>
+    </main>
+    <!--Main layout-->
+
+    <!--Footer-->
+    <footer>
+        <h3 class="header-title">
+            SUNFLOWER <br> <span>Vận hành bởi:</span>
+        </h3>
+        <div class="footer__info">
+            <div class="footer__left">
+                <div class="footer__left-info">
+                    <div class="footer__group">
+                        <h4><i class="fa-solid fa-building-columns"></i> ĐẠI HỌC CÔNG NGHIỆP TP HỒ CHÍ MINH</h4>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Số 12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, HCM
+                        </p>
+                    </div>
+
+                    <div class="footer__group">
+                        <h4>THÀNH VIÊN <i class="fa-solid fa-user-group"></i></h4>
+                        <ul>
+                            <li> <i class="fa-brands fa-servicestack"></i> Ân Hiền Bảo Phúc</li>
+                            <li> <i class="fa-brands fa-servicestack"></i> Nguyễn Minh Sang</li>
+                            <li> <i class="fa-brands fa-servicestack"></i> Dương Thái Bảo</li>
+                            <li> <i class="fa-brands fa-servicestack"></i> Phạm Vũ Khang</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__left-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8582379832246!2d106.68426511149357!3d10.822158889284918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174deb3ef536f31%3A0x8b7bb8b7c956157b!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBUUC5IQ00!5e0!3m2!1svi!2s!4v1698337492660!5m2!1svi!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="footer__right">
+                <div class="footer__group" style="padding-right: 20px;">
+                    <h4>HỖ TRỢ <i class="fa-regular fa-circle-question"></i></h4>
+                    <ul style="width: 170px;">
+                        <li>Hotline: 1900 52 24 85</li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-facebook footer-icon"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram footer-icon"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin-in footer-icon"></i></a>
+                            <a href=""><i class="fa-brands fa-google-plus-g footer-icon"></i></a>
+                            <a href=""><i class="fa-brands fa-github footer-icon"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__group">
+                    <h4>CHÍNH SÁCH <i class="fa-solid fa-building-shield"></i></h4>
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-brands fa-servicestack"></i> Chính sách vận chuyển</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-servicestack"></i> Chính sách bảo mật thông tin</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-servicestack"></i> Điều khoản sử dụng</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-servicestack"></i> Phương thức thanh toán</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-servicestack"></i> Chính sách bảo hành</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>© 2023 Copyright <span>Nhóm 7 | Hệ thống và Công nghệ Web</span></p>
+        </div>
+    </footer>
+    <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+    <!-- Bootstrap tooltips -->
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../JS/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../JS/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../JS/product.js"></script>
+    <script src="../JS/shopingcart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        $(document).ready(function () {
+            $("#send").submit(function (e) {
+                e.preventDefault();
+                Swal.fire({
+                    title: "Đơn hàng đã được đặt thành công",
+                    showConfirmButton: true,
+                }).then(function () {
+                    window.location.href = "../HTML/home.html";
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quà Tặng | SunFlower - Shop Hoa Trực Tuyến</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/SideBarIcon.png">
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/styleGift.css">
+    <link rel="stylesheet" href="../CSS/bootstrap-grid.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../ASSETS/fonts/fontawesome-free-6.4.0-web/css/all.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="sale-bar">
+            <p class="sale_message text-center">MUA 2 TẶNG 1 KHI NHẬP MÃ: 2003 <i class="fa-solid fa-ticket"></i></p>
+        </div>
+    </header>
+    <div class="header my-5">
+        <div class="vector-left">
+            <a href="../home.html">
+                <h1 class="header-title">SUNFLOWER</h1>
+            </a>
+        </div>
+        <div class="vector-center">
+            <ul class="nav">
+                <li class="sl">
+                    <select>
+                        <option value="Khu vực">Khu vực</option>
+                        <option value="TPHCM">TPHCM</option>
+                        <option value="Cần Thơ">Cần Thơ</option>
+                        <option value="Đà Nẵng">Đà Nẵng</option>
+                        <option value="Hải Phòng">Hải Phòng</option>
+                        <option value="Biên Hoà">Biên Hoà</option>
+                        <option value="Hà Nội">Hà Nội</option>
+                        <option value="Tỉnh khác">Tỉnh khác</option>
+                    </select>
+                </li>
+                <li><a class="strong" href="../home.html">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm
+                        <i class="fa-solid fa-angle-down text-sm"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="../HTML/product.html?h1">Hoa Giả</a></li>
+                        <li><a href="../HTML/product.html?h2">Hoa Tươi</a></li>
+                        <li><a href="../HTML/product.html?h3">Chậu Hoa</a></li>
+                        <li><a href="../HTML/product.html?h4">Giỏ Hoa</a></li>
+                    </ul>
+                </li>
+                <li><a class="strong" href="../HTML/sale.html">Ưu đãi</a></li>
+                <li><a class="strong" href="../HTML/giftcard.html">Quà tặng</a></li>
+                <li><a class="strong" href="../HTML/takecareFlower.html">Hướng dẫn</a></li>
+            </ul>
+        </div>
+        <div class="vector-right">
+            <div class="header-cart">
+                <div class="checkout" style="width: 150px;">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#cart">
+                        <i class="fa-solid fa-cart-shopping"  id="icon_checkout"></i>
+                        <span class="count-cart">0</span>
+                    </a>
+                </div>
+
+            </div>
+            <div class="header-user">
+                <a href="#" id="loginBtn" data-target="#myModal" data-toggle="modal">
+                    <i class="fa-solid fa-user" id="user"></i>
+                </a>
+
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content" style="background: #ffd6e4;">
+                            <div class="modal-header">
+                                <h4>Đăng nhập</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form name="form" class="box" method="post">
+                                    <div class="input-email">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <input id="email" class="input-email-btn" type="email" name="email" placeholder="Email" />
+                                    </div>
+            
+                                    <div class="input-pass">
+                                        <i class="fa-solid fa-lock"></i>
+                                        <input id="pass" class="input-pass-btn" type="password" name="password"
+                                            placeholder="Mật khẩu" />
+                                    </div>
+            
+                                    <a href="#" class="forgetpass">Quên mật khẩu?</a>
+            
+                                    <div class="btn-control">
+                                        <input type="button" data-dismiss="modal" class="cancel" id="cancel"
+                                            value="QUAY LẠI"></input>
+                                        <input type="button" onclick="closeModal()" class="submit" id="submit"
+                                            value="ĐĂNG NHẬP"></input>
+                                    </div>
+            
+                                    <div class="login-or">
+                                        <div class="login-separator"></div>
+                                        <h2 class="login-text">HOẶC</h2>
+                                        <div class="login-separator"></div>
+                                    </div>
+            
+                                    <div class="btn-link-control">
+                                        <a href="#" class="btn-fb">
+                                            <i class="fa-brands fa-facebook"></i>
+                                            <p>Facebook</p>
+                                        </a>
+            
+                                        <a href="#" class="btn-gg">
+                                            <i class="fa-brands fa-google"></i>
+                                            <p>Google</p>
+                                        </a>
+                                    </div>
+            
+                                    <p class="login-text-extra">Bạn chưa có tài khoản? <a href="#">Đăng ký.</a></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+                    </table>
+                    <div>Tổng tiền: <span class="total-cart"></span> VND</div>
+                </div>
+                <div class="modal-footer">
+                    <button class="clear-cart btn btn-danger">Xóa giỏ hàng</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                     <a href="../HTML/checkout.html" class="btn btn-primary">Mua ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <hr>
+        <div class="section-header d-flex m-4 flex-column align-items-center justify-content-center">
+            <h2>
+                E-GIFT VOUCHER
+            </h2>
+            <p style="font-size: 1.8rem;">Nếu bạn không biết nên mua gì cho người thân của mình, hãy tặng họ một phiếu quà tặng từ SunFlower. 
+                Phiếu quà tặng này sẽ được gửi trực tiếp đến hộp thư điện tử của họ, cho phép họ tự do lựa chọn món quà mình mong muốn. 
+                Đây là cách tặng quà hoàn hảo cho tất cả mọi người.</p>
+            <ol class="list-group">
+                <li class="list-group-item">
+                    <a href="#">Lựa chọn một voucher giảm giá từ 100.000₫ đến 500.000₫</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">Gửi lời nhắn cá nhân độc đáo của bạn</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">Chọn ngày giao phiếu quà tặng điện tử</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">Người thân yêu của bạn sẽ tự tay chọn những bó hoa mà họ ưa thích</a>
+                </li>
+            </ol>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-auto" style="margin: 0 auto; height: 100%;">
+                <img src="../assets/img/thanksGift.png" alt="" style="width: 1180px; height: 500px;">
+            </div>
+            <div class="col-auto" style="margin: 40px 0; width: 100%;">
+                <form action="giftVoucher" class="text-start p-2" style="width: 60%; margin: 0 auto;">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td><label for="validationCustom01" class="form-label my-2">Mệnh giá voucher
+                                    <span>*</span></label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="selectionPrice" id="selectionPrice" class="form-select form-control">
+                                    <option value="100.000₫">100.000₫</option>
+                                    <option value="150.000₫">150.000₫</option>
+                                    <option value="200.000₫">200.000₫</option>
+                                    <option value="250.000₫">250.000₫</option>
+                                    <option value="300.000₫">300.000₫</option>
+                                    <option value="400.000₫">400.000₫</option>
+                                    <option value="500.000₫">500.000₫</option>
+                                    <option value="700.000₫">700.000₫</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="nameInput" class="form-label my-2">Tên người nhận<span>*</span></label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="name" class="form-control px-xl-5" id="nameInput">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="emailInput" class="form-label my-2">Email người nhận<span>*</span></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="email" name="email" class="form-control" id="emailInput">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="" class="form-label my-2">Ghi chú:</label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-floating">
+                                    <textarea name="floatingTextarea2" cols="20" rows="3" class="form-control"
+                                        style="height: 200px;" id="floatingTextarea2"></textarea>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center"  style="margin-top: 20px;">
+                                <input type="button" class="btn btn-primary" value="Lưu"></input>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h3 class="header-title">
+            SUNFLOWER <br> <span>Vận hành bởi:</span>
+        </h3>
+        <div class="footer__info">
+            <div class="footer__left">
+                <div class="footer__left-info">
+                    <div class="footer__group">
+                        <h4><i class="fa-solid fa-building-columns"></i> ĐẠI HỌC CÔNG NGHIỆP TP HỒ CHÍ MINH</h4>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Số 12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, HCM
+                        </p>
+                    </div>
+
+                    <div class="footer__group">
+                        <h4>THÀNH VIÊN <i class="fa-solid fa-user-group"></i></h4>
+                        <ul>
+                            <li> <i class="fa-brands fa-servicestack"></i> Ân Hiền Bảo Phúc</li>
+                            <li> <i class="fa-brands fa-servicestack"></i> Nguyễn Minh Sang</li>
+                            <li> <i class="fa-brands fa-servicestack"></i> Dương Thái Bảo</li>
+                            <li> <i class="fa-brands fa-servicestack"></i> Phạm Vũ Khang</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__left-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8582379832246!2d106.68426511149357!3d10.822158889284918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174deb3ef536f31%3A0x8b7bb8b7c956157b!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBUUC5IQ00!5e0!3m2!1svi!2s!4v1698337492660!5m2!1svi!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="footer__right">
+                <div class="footer__group" style="padding-right: 20px;">
+                    <h4>HỖ TRỢ <i class="fa-regular fa-circle-question"></i></h4>
+                    <ul style="width: 170px;">
+                        <li>Hotline: 1900 52 24 85</li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-facebook footer-icon"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram footer-icon"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin-in footer-icon"></i></a>
+                            <a href=""><i class="fa-brands fa-google-plus-g footer-icon"></i></a>
+                            <a href=""><i class="fa-brands fa-github footer-icon"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__group">
+                    <h4>CHÍNH SÁCH <i class="fa-solid fa-building-shield"></i></h4>
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-brands fa-servicestack"></i> Chính sách vận chuyển</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-servicestack"></i> Chính sách bảo mật thông tin</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-servicestack"></i> Điều khoản sử dụng</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-servicestack"></i> Phương thức thanh toán</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-servicestack"></i> Chính sách bảo hành</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>© 2023 Copyright <span>Nhóm 7 | Hệ thống và Công nghệ Web</span></p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../JS/product.js"></script>
+    <script src="../JS/shopingcart.js"></script>
+</body>
+
+</html>

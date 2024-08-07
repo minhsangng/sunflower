@@ -1,0 +1,235 @@
+/*content*/
+
+.content {
+  margin: 36px auto;
+  width: 80%;
+  padding: 0;
+}
+
+.content-title {
+  text-align: center;
+}
+
+.content-title-text {
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-weight: 550;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+}
+
+.left {
+  width: 20%;
+  padding-right: 9px;
+  margin-top: 16px;
+}
+
+.right {
+  width: 80%;
+  padding-left: 9px;
+  margin-top: 16px;
+}
+
+.orderby-title,
+.filter-title {
+  font-size: 22px;
+  font-weight: 550;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
+.orderby {
+  padding-left: 30px;
+  margin-bottom: 32px;
+  list-style: circle;
+}
+
+.orderby li {
+  margin: 0;
+  font-size: 18px;
+  padding: 3px;
+}
+
+.orderby a {
+  color: #000;
+}
+
+.filter h5 {
+  font-size: 20px;
+  padding: 9px 0 9px 0;
+}
+
+.filter span {
+  color: red;
+}
+
+.input-rate {
+  height: 25px;
+  margin-bottom: 9px;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+
+label {
+  height: 25px;
+  width: 25px;
+  font-size: 20px;
+  margin: 0;
+}
+
+#f1,
+#f2 {
+  margin-bottom: 16px;
+  margin-right: 9px;
+}
+
+#lf1,
+#lf2 {
+  width: 80px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.filter-main .btn {
+  margin-top: 16px;
+  font-size: 18px;
+}
+
+.btn:focus {
+  outline: none;
+  border: none;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-3 h3 {
+  font-size: 24px;
+  margin: 0;
+  padding: 16px 0;
+}
+
+.col-3 p {
+  font-size: 20px;
+  margin: 0;
+  color: red;
+}
+
+.thumbnail input {
+  margin: 16px 0 9px 0;
+  font-size: 1.4rem;
+}
+
+/*Xem thêm*/
+
+.pagination {
+  font-size: 16px;
+}
+
+/*container*/
+
+.container {
+  margin: 16px 0 0 0;
+}
+
+.section-1 h3,
+.section-2 h3,
+.section-3 h3 {
+  font-size: 28px;
+  margin: 0;
+  font-weight: 550;
+}
+
+.section-1 img {
+  width: 500px;
+  padding: 16px 0;
+}
+
+.section-1 p,
+.section-2 p,
+.section-3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.section-2 {
+  margin-top: 32px;
+}
+
+.section-2 img {
+  float: left;
+  margin: 16px 16px 16px 0;
+  height: 300px;
+  width: 250px;
+}
+
+.section-2 p {
+  padding: 16px 0;
+}
+
+.section-3 {
+  margin: 32px 0;
+}
+
+.section-3 ul {
+  list-style: decimal;
+  margin: 0;
+}
+
+.section-3 li {
+  padding-top: 16px;
+  padding-bottom: 9px;
+}
+
+.p1 {
+  float: right;
+  width: 70%;
+}
+
+.p2 {
+  float: left;
+  width: 65%;
+  padding-right: 32px;
+}
+
+.p3 {
+  float: right;
+  width: 60%;
+}
+
+.section-4 a {
+  font-size: 25px;
+  padding-right: 9px;
+}
+
+.col-3 h3 {
+  font-size: 24px;
+  margin: 0;
+  padding: 16px 0;
+}
+
+.col-3 p {
+  font-size: 20px;
+  margin: 0;
+  color: red;
+}
+
+#search-area {
+  border-radius: 16px;
+  border: 1px solid;
+  margin-bottom: 15px;
+}
+.checked {
+  color: orange;
+}

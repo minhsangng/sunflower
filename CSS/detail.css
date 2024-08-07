@@ -1,0 +1,21 @@
+.percentage-wrapper {
+  display: inline-block;
+  margin-left: 10px; /* Thay đổi giá trị margin theo mong muốn của bạn */
+}
+
+.progress-bar {
+  border-radius: 0; /* Đảm bảo góc của thanh tiến trình không bị cong */
+}
+
+.verification-badge {
+  padding: 4px;
+  background-color: #800080;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+
+#comment{
+  padding-left: 110px;
+}
